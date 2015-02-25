@@ -43,16 +43,29 @@ describe("Exhausted", function() { //start
       expect( exhausted.add50(25) ).eq(75);
     });
   });
-  describe("multBy10", function() {
+  
+  describe("sub10", function() {
 
-    it("is a method", function() {
-      expect( typeof exhausted.multBy10 ).eq("function");
-    });
-
-    it("multiplies a number by 10", function() {
-      expect( exhausted.multBy10(50) ).eq(500);
+    it("subtracts 10 from a number", function() {
+      expect( exhausted.sub10(100) ).eq(90);
     });
   });
+
+  describe("sortStuff", function() {
+
+    it("creates a sorted array", function() {
+      var stuff = ["9","8","6","4","9"];
+      var sortedStuff = exhausted.sortStuff(stuff);
+
+      // The values are sorted
+      expect(sortedStuff).deep.eq(["4","6","8","9","9"]);
+
+      // return  a copy
+      expect(sortedStuff).not.eq(stuff);
+    });
+  });
+
+  
 
   
 

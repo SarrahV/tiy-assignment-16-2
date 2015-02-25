@@ -41,14 +41,17 @@ window.Exhausted = (function() {
 
     //----
 
-    multiplyby10: function(num){
-      return num *= 10;
+    sub10: function(num){
+      return num -= 10;
     },
 
 
     //----
 
-    
+    sortStuff: function(arr){
+        return _.sortStuff(arr);
+      },
+
 
     //----
 
