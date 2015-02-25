@@ -1,0 +1,16 @@
+{
+  "name": "tiy-assignment-16-2",
+  "version": "1.0.0",
+  "description": "testing exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "chai",
+    "mocha"
+  ],
+  "author": "Sarrah Vesselov",
+  "license": "ISC"
+}
