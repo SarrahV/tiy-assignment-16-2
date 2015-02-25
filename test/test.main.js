@@ -65,8 +65,34 @@ describe("Exhausted", function() { //start
     });
   });
 
-  
+   describe("hasSomething", function() {
 
+    it("determines if something is in an array", function() {
+      var something = ["yes", "da", "something"];
+      var nothing  = ["zip", "zilch", "nada", "nyet", "um...no"];
+
+      expect( exhausted.hasSomething(something, "yes") ).eq( true  );
+      expect( exhausted.hasSomething(something, "nada") ).eq( false );
+
+      expect( exhausted.hasSomething(nothing, "something") ).eq( false );
+      expect( exhausted.hasSomething(nothing, "zilch") ).eq( true  );
+    });
+
+  });
+
+   describe("divideMe5", function() {
+
+    it("divides a number by 5", function() {
+      expect( exhausted.divideMe5(10) ).eq(2);
+    });
+  });
+
+ describe("apologize", function() {
+
+    it("apologizes to a name", function() {
+      expect( exhausted.apologize("JD") ).eq("I am sorry this is so lame JD");
+    });
+  });
   
 
 

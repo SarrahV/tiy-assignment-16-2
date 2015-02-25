@@ -49,11 +49,28 @@ window.Exhausted = (function() {
     //----
 
     sortStuff: function(arr){
-        return _.sortStuff(arr);
+        return _.sortBy(arr);
       },
 
 
     //----
+
+    hasSomething: function(array, value){
+        return _.contains(array, value, [0]);
+      },
+
+    //----
+
+    divideMe5: function(num) {
+      return num /= 5;
+    },
+
+    //----
+
+    apologize: function(name) {
+      return "I am sorry this is so lame " + name;
+    }
+
 
   };
 
